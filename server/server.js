@@ -1,6 +1,6 @@
-const express = require("express");
-const upload = require("./upload");
-const cors = require("cors");
+import express from "express";
+import upload from "./upload";
+import cors from "cors";
 
 const server = express();
 
