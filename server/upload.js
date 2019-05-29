@@ -1,6 +1,6 @@
 import formidable from "formidable"
 
-module.exports = function upload(req, res) {
+export default function upload(req, res) {
     var form = new formidable.IncomingForm();
     form.uploadDir = "/img_uploads";
     form.keepExtensions = true;

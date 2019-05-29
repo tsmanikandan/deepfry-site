@@ -4,7 +4,7 @@
   "description": "Server for calling the GoDeepFry FFI",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "ffi",
@@ -20,6 +20,8 @@
     "formidable": "^1.2.1"
   },
   "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-env": "^1.7.0",
     "jest": "^24.8.0"
   }
 }
