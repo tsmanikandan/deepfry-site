@@ -11,7 +11,10 @@ export default function upload(req, res) {
     });
 
     form.on("end", () => {
-        res.json();
+        const res = {};
+        res.status = 200;
+        res.json = { foo: 'bar' };
+        return res;
     });
     form.parse(req);
 }
